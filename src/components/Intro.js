@@ -12,6 +12,7 @@ export default function Intro() {
                     </div>
                     <div>
                         <h3>SOFTWARE ENGINEER</h3>
+                        <h5>FULL STACK DEVELOPER</h5>
                       
                     </div>
                     
