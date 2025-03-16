@@ -15,10 +15,11 @@ export default function About() {
                         performance.</p>
 
                 </div>
-                <div className='Container4 box2'>
+                <div className='Container4 box1 box2'>
+                    <span className="default-text ctext">SKILLS</span>
 
                 </div>
-                <div className='Container4 box3'>
+                <div className='Container4 box1'>
 
                 </div>
             </div>
