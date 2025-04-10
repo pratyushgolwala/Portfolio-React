@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
+import Work from './components/Work';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />  {/* Home Page */}
         <Route path="/about" element={<About />} />  {/* About Page */}
+        <Route path="/work" element={<Work />} />  {/* Work Page */}
       </Routes>
     </Router>
   );

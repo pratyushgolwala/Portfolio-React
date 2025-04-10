@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -57,6 +59,8 @@
   padding: 10px 20px;
   width: 100%;
   position: fixed;
+  z-index: 9999;
+
 }
 
 
@@ -931,4 +935,449 @@ form button:hover {
   justify-content: flex-end;
   margin-top: 105px;
   margin-right: 100px;
+}
+
+
+
+/******ABOUT*******/
+
+
+.about-area{
+  padding-top: 130px;
+}
+.about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:50px;
+}
+.about-content{
+  flex-basis: 60%;
+}
+.about-content h4{
+  color: wheat;
+  font-size: 40px;
+  line-height: 70px;
+  text-transform: capitalize;
+}
+.about-content ul {
+  color:#fff;
+  text-align: justify;
+}
+
+.about-content ul li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+
+.about-skills{
+  flex-basis: 35%;
+}
+.about-skills ul li{
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+.about-skills ul li:last-child{
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+
+/*---------------------------Button---------------------------*/
+
+
+
+/*---------------------------Education & Internship---------------------------*/
+
+.education-content .row{
+  display: flex;
+  border-radius: 5px;
+  height: 400px;
+  margin-bottom: 250px;
+}
+
+.education-content .title{
+  color: wheat;
+}
+.education-content .row .education,
+.education-content .row .internship
+{
+  color: #e5e5e5;
+  flex:0 0 50%;
+  max-width: 50%;
+  margin-top: 30px;
+} 
+.education-content  h3.title{
+  font-size:24px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.education-content .row.timeline-box{
+  flex:0 0 100%;
+  max-width: 100%;  
+}
+.education-content .row .timeline{
+
+  padding: 30px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+.education-content .row .timeline-item{
+  position:relative;
+  padding-left: 37px;
+  padding-bottom: 50px; 
+  color: white;
+}
+.education-content .row  .internship .timeline-item{
+  position:relative;
+  padding-left: 37px;
+  padding-bottom: 30px; 
+}
+.education-content .row .timeline-item:last-child{
+  padding-bottom: 0;
+}
+.education-content .row .timeline-item::before{
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: white;  
+}
+.education-content .row .circle-dot{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: wheat;
+}
+.education-content .row .timeline-title  {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.education-content .row .internship .timeline-title  {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.education-content .row .timeline-text{
+  line-height: 25px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.timeline-item h3 {
+  color: white;
+}
+.timeline-item h4 {
+  color: white;
+}
+
+
+/***SKILLS****/
+
+.carousel-container {
+  padding: 40px;
+  text-align: center;
+
+  color: white;
+  background: linear-gradient(to bottom,#181818,rgb(11, 11, 11),#181818);
+}
+
+.carousel-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: wheat;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  width: max-content;
+}
+
+.skill-card {
+  flex: 0 0 auto;
+  width: 120px;
+  margin: 0 15px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+
+}
+.skill-card:hover{
+  transform:scale(1.3);
+}
+.skill-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 8px;
+
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+/*********WORK***********/
+
+
+
+.holographic-display {
+  height: 100vh;
+  width: 100vw;
+  background: #181818;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.holo-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 40px;
+}
+
+.holograph-left {
+  flex: 1;
+  position: relative;
+  height: 400px;
+}
+
+.projects-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project-details-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Project Details Panel */
+.project-details-panel {
+  position: relative;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 25px 30px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+  backdrop-filter: blur(12px);
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+  animation: fadeInUp 0.6s ease;
+}
+
+/* Holographic Project Disk */
+.holographic-project {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  margin-left: -90px;
+  margin-top: -90px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-out;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.holographic-project.active {
+  transform: translate3d(0, -20px, 0);
+  z-index: 100;
+}
+
+.holographic-disk {
+  position: relative;
+  width: 100%;
+  height: 270%;
+  transform-style: preserve-3d;
+  animation: float 3s ease-in-out infinite;
+}
+
+.holographic-project.active .holographic-disk {
+  animation: float-active 2s ease-in-out infinite;
+}
+
+/* Glowing image on disk */
+.project-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: var(--project-image);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 25px var(--project-color);
+  filter: brightness(1.2) contrast(1.1);
+  transform: rotateX(83deg);
+  opacity: 0.9;
+}
+
+/* Glow pulse */
+.holographic-project.active .holographic-disk::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: var(--project-color);
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.3;
+  z-index: -1;
+  animation: pulse 2s infinite;
+}
+
+/* Project Title (in disk or below if needed) */
+.project-title {
+  margin-top: 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+/* Tech tags */
+.tech-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.tech-tag {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: white;
+  transition: background 0.3s;
+}
+
+.tech-tag:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* View project button */
+.view-project-btn {
+  background: linear-gradient(45deg, #4f46e5, #10b981);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+.view-project-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation Dots */
+.project-navigation {
+  position: absolute;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    right: 90px;
+}
+
+.nav-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-dot.active {
+  background: white;
+  transform: scale(1.3);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes float-active {
+  0%, 100% {
+    transform: translateY(-6px);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
 }

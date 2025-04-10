@@ -72,7 +72,7 @@ export default function Intro() {
 
 
 
-            <div id="contact">
+            <div id="contact" className='contact'>
                 <div class="container">
                     <div class="contact-floating">
                         <i class="fas fa-code"></i>
